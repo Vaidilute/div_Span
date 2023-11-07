@@ -74,8 +74,8 @@ h2:hover{
     padding-right: 0px;
     padding-left: 100px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    /* Šešėlis pasirodys per 1s, tekstas pasislinks per 5s */
+    /* Šešėlis pasirodys per 2s, tekstas pasislinks per 5s */
     transition-property: box-shadow, padding; 
-    transition-duration: 10s, 5s;
+    transition-duration: 2s, 5s;
 }
 
