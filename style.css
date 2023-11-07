@@ -41,8 +41,7 @@ a.mygtukas{
     font-weight: 700; /* Kai keičiame font-weight svarbu, kad šriftas turėtų tą svorį */
     padding: 10px 20px;
     margin-bottom: 5px;
-    transition-property: color, backgroud-color;
-    /* transition-property: color, background-color; */
+    transition-property: color, background-color;
     transition-duration: 3s;
 }
 
@@ -51,9 +50,6 @@ a.mygtukas{
 a.mygtukas:hover {
     background-color: transparent; /* padarom permatomą */
     color: #86631e61;
-    border-style: solid; /*remelis spalvą pagal nutylėjimą pasiima iš teksto spalvos, todėl jos nenurodysime*/  
-    border-width: 3px; 
-    /* Išbandysime perėjimus */
     transition-property: color, background-color;
     transition-duration: 3s;
 }
