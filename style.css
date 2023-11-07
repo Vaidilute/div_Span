@@ -1,0 +1,81 @@
+.antraste{
+    background-image: url("saule.jpg");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.pagrindas{
+    background-color: rgb(245, 245, 220);
+    max-width: 1200px;
+    min-height: 800px;
+    margin-left: auto; /*paraštės bus tokio dydžio, kiek liks vietos */
+    margin-right: auto;
+    padding: 50px;
+}
+
+.poraste{
+    background-color: rgb(240, 158, 59);
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+.autorius{
+    color: rgb(165, 101, 42);
+    font-weight: 800;
+}
+
+/* Nuroda kaip mygtukas */
+a.mygtukas{
+    text-decoration: none;         /*panaikiname pabraukimą */
+    border-style: solid;           /* Aprėminame */
+    border-width: 3px;             /* Rėmelį pastroriname */ 
+    border-color: white;
+    border-radius: 10px; 
+    background-color: #866c25c3;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700; /* Kai keičiame font-weight svarbu, kad šriftas turėtų tą svorį */
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    transition-property: color, backgroud-color;
+    /* transition-property: color, background-color; */
+    transition-duration: 3s;
+}
+
+/*aprašome, kaip keisis nuoroda, kai ant jos užvesime pelę */
+
+a.mygtukas:hover {
+    background-color: transparent; /* padarom permatomą */
+    color: #f0569861;
+    border-style: solid; /*remelis spalvą pagal nutylėjimą pasiima iš teksto spalvos, todėl jos nenurodysime*/  
+    border-width: 2px; 
+    /* Išbandysime perėjimus */
+    transition-property: color, background-color;
+    transition-duration: 3s;
+}
+
+a.spalva{
+    background-color: rgb(149, 91, 37);
+}
+
+
+h2{
+    /* Rezervuojam padding dešinėj pusėj, kad nejudėtų, kai užvesim pelę */
+    padding-right: 100px;
+    background-color: beige;
+}
+
+h2:hover{
+    /* Dešinėj paddingą nuimam, o kairėje uždedam */
+    padding-right: 0px;
+    padding-left: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* Šešėlis pasirodys per 1s, tekstas pasislinks per 5s */
+    transition-property: box-shadow, padding; 
+    transition-duration: 10s, 5s;
+}
+
