@@ -14,6 +14,12 @@
     padding: 50px;
 }
 
+.pagrindas2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
 .poraste{
     background-color: rgb(240, 158, 59);
     height: 100px;
@@ -62,7 +68,6 @@ a.spalva{
 h2{
     /* Rezervuojam padding dešinėj pusėj, kad nejudėtų, kai užvesim pelę */
     padding-right: 100px;
-    background-color: beige;
 }
 
 h2:hover{
@@ -75,3 +80,22 @@ h2:hover{
     transition-duration: 1s, 5s;
 }
 
+.dalis1{
+    background-color: rgb(244, 185, 113);
+}
+
+.dalis2{
+    background-color: rgb(250, 220, 183);
+    grid-column: span 2;    
+}
+
+.dalis3{
+    
+    background-color: rgb(240, 158, 59);
+    grid-row: span 2;   
+}
+
+.remelis{
+    border-radius: 30px;
+    padding: 20px;
+}
